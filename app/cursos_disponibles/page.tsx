@@ -3,7 +3,7 @@ import { GetCourses } from '@/types/global'
 import Image from 'next/image'
 
 async function getData() {
-    const res = await fetch("https://dev-balanzuniversity-api.balpays.com/courses")
+    const res = await fetch("https://dev-balanzuniversity-api.balpays.com/courses", { next: { revalidate: 60 } })
     return res.json()
 }
 
