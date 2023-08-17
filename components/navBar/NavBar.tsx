@@ -45,7 +45,7 @@ export const NavBar = () => {
                             `mx-[10px] p-[10px] cursor-pointer rounded-[30px] border-[1px] min-w-[200px] text-center
                             ${isActive ? "bg-blue_balanz text-[white]" : "border-blue_balanz"}`
                         }
-                        prefetch={false}
+                        prefetch={true}
                     >
                         {item.name}
                     </Link>
