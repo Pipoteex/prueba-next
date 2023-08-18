@@ -8,9 +8,9 @@ const nextConfig = {
             },
         ],
     },
-    experimental: {
+    /* experimental: {
         appDir: true,
-    },
+    }, */
 };
 
 module.exports = nextConfig;

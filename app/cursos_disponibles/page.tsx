@@ -1,6 +1,5 @@
 import React from 'react'
 import { GetCourses } from '@/types/global'
-import Image from 'next/image'
 
 export const dynamic = 'auto'
 
@@ -22,7 +21,7 @@ export default async function Page() {
                             <div className='text-gray_letter_footer font-[700]'>{item.name}</div>
                             <div>{item.detail}</div>
                         </div>
-                        <Image src={item.image} alt={item.name} width={400} height={200} className='rounded-[20px]' loading='lazy' />
+                        <img src={item.image} alt={item.name} className='rounded-[20px]' />
                     </div>
                 })
             }
