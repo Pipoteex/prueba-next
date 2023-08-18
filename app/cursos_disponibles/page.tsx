@@ -4,7 +4,7 @@ import { GetCourses } from '@/types/global'
 export const dynamic = 'auto'
 
 async function getData() {
-    const res = await fetch('https://dev-balanzuniversity-api.balpays.com/courses', { cache: 'no-store' })
+    const res = await fetch('https://dev-balanzuniversity-api.balpays.com/courses', { next: { revalidate: 5 } })
     return await res.json()
 }
 
